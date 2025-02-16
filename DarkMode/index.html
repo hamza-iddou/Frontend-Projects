@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero" id="test">
+        <nav>
+            <img class="logo" src="portfolio_site_img/logo.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">HIRE ME</a></li>
+            </ul>
+            <img src="portfolio_site_img/moon.png" id="icon">
+        </nav>
+        <div class="info">
+            <h1>I'm <span>Salma</span> laalaoui</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quidem quibusdam architecto error natus
+                numquam, laudantium mollitia rerum quisquam neque ex, delectus tempore unde doloribus animi, in
+                provident cum ipsum voluptates quos minus saepe temporibus deleniti culpa! Quis nobis nemo ab facere
+                autem doloremque sequi exercitationem enim. Asperiores quo sit rem sequi nobis odit ipsum accusantium
+                laudantium delectus aspernatur, aliquam fugiat a reprehenderit, nemo autem eveniet quisquam quae
+                laboriosam debitis distinctio ducimus explicabo ex libero quam! Vitae, laudantium. Esse eaque neque
+                officiis corporis incidunt debitis quod perspiciatis repellendus illo nam itaque quisquam assumenda
+                ratione vero, quaerat saepe, eligendi nobis error!</p>
+        </div>
+        <div class="img-box">
+            <img src="portfolio_site_img/pattern.png" alt="" class="back-img">
+            <img src="portfolio_site_img/girl.png" alt="" class="main-img">
+        </div>
+    </div>
+</body>
+<script>
+    var icon = document.getElementById(`icon`);
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "portfolio_site_img/sun.png";
+        }else{
+            icon.src = "portfolio_site_img/moon.png";
+        }
+    }
+
+</script>
+</html>

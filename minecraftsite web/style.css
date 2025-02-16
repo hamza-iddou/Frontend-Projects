@@ -1,0 +1,170 @@
+*{margin: 0px; padding: 0px;}
+.content{
+    background-image: url(apps.608.13510798887677013.5c7792f0-b887-4250-8c4e-4617af9c4509.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+h3{
+    color: white;
+}
+.header{
+    position: absolute;
+    font-size: 2em;
+    font-family: Minecraft;
+}
+.skin{
+    position: absolute;
+    top: -80px;
+    left: 1400px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease, color 0.5s ease;
+}
+.skin:hover{
+    letter-spacing: 5px;
+    color: rgb(0, 150, 20);
+    transform: scale(1.05);
+}
+.about{
+    position: absolute;
+    top: -80px;
+    left: 1600px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease, color 0.5s ease;
+}
+.about:hover{
+    letter-spacing: 5px;
+    color: rgb(0, 150, 20);
+    transform: scale(1.05);
+}
+.service{
+    position: absolute;
+    top: -80px;
+    left: 400px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease, color 0.5s ease;
+}
+.service:hover{
+    letter-spacing: 5px;
+    color: rgb(0, 150, 20);
+    transform: scale(1.05);
+}
+.home{
+    position: absolute;
+    top: -80px;
+    left: 200px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease, color 0.5s ease;
+}
+.home:hover{
+    letter-spacing: 5px;
+    color: rgb(0, 150, 20);
+    transform: scale(1.05);
+}
+h5{
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+.minecrafticon img {
+    width: 100px; 
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 16.5%;
+    transform: translateX(-50%);  
+}
+p{
+    font-size: 2em;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 400px;
+    padding: 20px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: rgb(201, 201, 201);
+    text-align: center;
+}
+.box{
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+
+.mchh{
+    font-family: Minecraft;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease, color 0.5s ease;
+}
+.mchh:hover{
+    letter-spacing: 5px;
+    color: rgb(0, 255, 34);
+    transform: scale(1.1);
+}
+.creeperimage{
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    transform: translateX(-50%);
+    opacity: 1;   
+}
+.creeper{
+    width: 70px;
+    height: auto;
+    border: 2px solid #a5a5a5;
+    padding:5px;
+    transition: opacity 0.5s ease; 
+    object-fit: cover;
+}
+.red{
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    transform: translateX(-50%);
+    opacity: 0;
+    
+}
+.redeyes{
+    width: 70px;
+    height: auto;
+    border: 2px solid #a5a5a5;
+    padding:5px;
+    transition: opacity 0.5s ease; 
+    object-fit: cover;
+}
+.red:hover{
+    opacity: 1;
+}
+.link {
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    left: 45%;
+    top: 500px;
+    background-color: hwb(0 100% 0% / 0.322);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link:hover {
+    font-size: 1.2em;
+    background-color: rgb(17, 207, 0);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,43 @@
+*{
+    font-family: 'Poppins';
+}
+body{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgb(10, 15, 14);
+
+}
+input{
+    font-size: 2rem;
+    width: 440px;
+    border: none;
+    margin: 10px auto;
+    background-color:  rgb(37, 46, 44);
+    color: rgb(0, 255, 136);
+    text-align: right;
+}
+button{
+    width: 100px;
+    margin: 5px;
+    font-size: 2rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 46, 44);
+    color: rgb(0, 255, 136);
+    
+
+}
+.equale{
+    width: 215px;
+}
