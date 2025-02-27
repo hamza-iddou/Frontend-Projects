@@ -1,98 +1,101 @@
-
 const questions = [
     {
-        questions: "whats the birthday of hamza?",
+        question: "Who was the first President of the United States?",  // changed 'questions' to 'question'
         answers:[
-            {text :"20-04-2004", correct: false},
-            {text :"20-08-2004", correct: false},
-            {text :"18-04-2004", correct: true},
-            {text :"18-08-2004", correct: false}
+            {text: "Abraham Lincoln", correct: false},
+            {text: "Thomas Jefferson", correct: false},
+            {text: "George Washington", correct: true},
+            {text: "Franklin D. Roosevelt", correct: false}
         ]
     },
     {
-        questions: "whats is the most important thnig in hamza's life?",
+        question: "What is the capital city of Japan?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Gym", correct: false},
-            {text :"Ps5", correct: false},
-            {text :"Phone", correct: false},
-            {text :"Laptop/Pc", correct: true}
+            {text: "Osaka", correct: false},
+            {text: "Kyoto", correct: false},
+            {text: "Hiroshima", correct: false},
+            {text: "Tokyo", correct: true}
         ]
     },
     {
-        questions: "what is the name of the mother of hamzaiddou?",
+        question: "Who wrote the play “Romeo and Juliet”?",  // changed 'questions' to 'question'
         answers:[
-            {text :"khadija", correct: false},
-            {text :"jmiaa", correct: false},
-            {text :"aicha", correct: false},
-            {text :"Fatima", correct: true}
+            {text: "Jane Austen", correct: false},
+            {text: "Mark Twain", correct: false},
+            {text: "Charles Dickens", correct: false},
+            {text: "William Shakespeare", correct: true}
         ]
     },
     {
-        questions: "if u had girl with him what the name he will chose for her? ",
+        question: "What is the chemical symbol for water?",  // changed 'questions' to 'question'
         answers:[
-            {text :"fatima", correct: false},
-            {text :"ritaj", correct: true},
-            {text :"laila", correct: false},
-            {text :"hiba", correct: false}
+            {text: "CO2", correct: false},
+            {text: "H2O", correct: true},
+            {text: "O2", correct: false},
+            {text: "H2", correct: false}
         ]
     },
     {
-        questions: "what he will choose?",
+        question: "What is the largest planet in our solar system?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Msamen", correct: true},
-            {text :"bghrir", correct: false},
-            {text :"l7archa", correct: false},
-            {text :"batbot", correct: false}
+            {text: "Jupiter", correct: true},
+            {text: "Earth", correct: false},
+            {text: "Saturn", correct: false},
+            {text: "Neptune", correct: false}
         ]
     },
     {
-        questions: "whats his favorite footballteam?",
+        question: "What gas do plants absorb from the air for photosynthesis?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Real Madrid", correct: false},
-            {text :"PSG", correct: false},
-            {text :"Fc Barcelone", correct: true},
-            {text :"Raja", correct: false}
+            {text: "Oxygen", correct: false},
+            {text: "Nitrogen", correct: false},
+            {text: "Carbon Dioxide", correct: true},
+            {text: "Hydrogen", correct: false}
         ]
     },
     {
-        questions: "What is the most thing he dislike?",
+        question: "What is the main programming language used for web development?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Homosexual people", correct: false},
-            {text :"People With Low IQ", correct: true},
-            {text :"Rca Fans", correct: false},
-            {text :"Gaming", correct: false}
+            {text: "C++", correct: false},
+            {text: "HTML", correct: true},
+            {text: "Java", correct: false},
+            {text: "Python", correct: false}
         ]
     },
     {
-        questions: "What Hamza he will choose \n 1. Buy expensive Car like Mercedes or luxury car idon't know \n2.Travel to aContry as visit? ",
+        question: "Which company developed the iPhone?",  // changed 'questions' to 'question'
         answers:[
-            {text :"1", correct: false},
-            {text :"2", correct: true}
+            {text: "Apple", correct: true},
+            {text: "Samsung", correct: false},
+            {text: "Google", correct: false},
+            {text: "Microsoft", correct: false}
         ]
     },
     {
-        questions: "he like Dogs or Cats",
+        question: "What does '/HTTP/' stand for in web development?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Cats", correct: true},
-            {text :"Dogs", correct: false},
-            {text :"In General he like animals", correct: true},
-            {text :"none of them", correct: false}
+            {text: "Hyper Transfer Text Protocol", correct: false},
+            {text: "HyperText Transfer Protocol", correct: true},
+            {text: "Hyper Terminal Text Protocol", correct: false},
+            {text: "Hyper Transport Transfer Protocol", correct: false}
         ]
     },
     {
-        questions: "What is the most fav anime for him ? ",
+        question: "In which year did World War II end?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Demonslayer", correct: false},
-            {text :"Naruto", correct: true},
-            {text :"GreatTeacher", correct: false},
-            {text :"Attack on titan", correct: false}
+            {text: "1940", correct: false},
+            {text: "1950", correct: false},
+            {text: "1945", correct: true},
+            {text: "1939", correct: false}
         ]
     },
     {
-        questions: "Do you think That iLove you ? ",
+        question: "Who was the famous queen of Egypt?",  // changed 'questions' to 'question'
         answers:[
-            {text :"Yes", correct: true},
-            {text :"No", correct: false},
+            {text: "Cleopatra", correct: true},
+            {text: "Elizabeth I", correct: false},
+            {text: "Victoria", correct: false},
+            {text: "Catherine", correct: false}
         ]
     },
 ];
@@ -113,10 +116,10 @@ function startQuiz() {
 }
 
 function showQuestion() {
-    restState();
+    resetState();  // corrected function name from restState to resetState
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionsElement.innerHTML = questionNo + ". " + currentQuestion.questions;
+    questionsElement.innerHTML = questionNo + ". " + currentQuestion.question;  // corrected property name from 'questions' to 'question'
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -130,7 +133,7 @@ function showQuestion() {
     });
 }
 
-function restState() {
+function resetState() {  // corrected function name from restState to resetState
     next.style.display = "none";
     while (answers.firstChild) {
         answers.removeChild(answers.firstChild);
@@ -159,7 +162,7 @@ function selectAnswer(e) {
 }
 
 function showScore() {
-    restState();
+    resetState();  // corrected function name from restState to resetState
     questionsElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     next.innerHTML = "Restart Quiz";
     next.style.display = "block";
