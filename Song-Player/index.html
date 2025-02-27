@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e34896e5ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    
+        <div class="image">
+            <img src="img/hq720.png" alt="" class="songimg">
+        </div>
+        <h1>Just For Me!</h1>
+        <p>PinkPantheress</p>
+        <audio  id="song">
+            <source src="img/pinkpantheress - just for me (Official Video).mp3">
+        </audio>
+        <input type="range" value="0" id="progress">
+        
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div><i onclick="playpause()" class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
